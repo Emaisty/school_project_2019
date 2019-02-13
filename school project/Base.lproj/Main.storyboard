@@ -1,24 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ARb-LQ-DId">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--mauda-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="mauda" id="BYZ-38-t0r" customClass="ViewController" customModule="school_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Расписание" id="lBl-iG-Qur"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-494.20289855072468" y="859.82142857142856"/>
+        </scene>
+        <!--Оценки-->
+        <scene sceneID="vxi-C1-eJA">
+            <objects>
+                <viewController id="2dq-e1-X10" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rEW-ti-8cS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4KA-RX-lGq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Оценки" id="XsR-0e-7yR"/>
+                    <navigationItem key="navigationItem" id="hvB-6J-iro"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xAh-xi-465" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="860"/>
+        </scene>
+        <!--Аккаунт-->
+        <scene sceneID="KYa-Se-Sz7">
+            <objects>
+                <viewController id="ULi-y7-auc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OZo-LI-6Li">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqk-wW-DOU">
+                                <rect key="frame" x="184" y="502" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="ARb-LQ-DId" kind="presentation" id="ndI-LO-h8P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Xtu-6D-Kws"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Аккаунт" id="uRy-ql-fhg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GhN-hO-P0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1190" y="860"/>
+        </scene>
+        <!--Настройки-->
+        <scene sceneID="8S2-mB-Z3E">
+            <objects>
+                <viewController id="4Fi-On-NVh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uh4-JB-Y9x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="h5F-Kg-OeE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Настройки" id="fod-og-NFV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UD0-c8-3EC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="860"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nnj-Rg-xTH">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="KIK-0T-jpp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ssK-to-ssh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="nOj-cP-MiP"/>
+                        <segue destination="2dq-e1-X10" kind="relationship" relationship="viewControllers" id="jT4-xV-mnW"/>
+                        <segue destination="ULi-y7-auc" kind="relationship" relationship="viewControllers" id="2EL-Zu-v5l"/>
+                        <segue destination="4Fi-On-NVh" kind="relationship" relationship="viewControllers" id="5Rs-S5-fvK"/>
+                        <segue destination="ARb-LQ-DId" kind="presentation" id="gCD-ee-Ya6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VsR-aV-81C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Pgc-bC-pK0">
+            <objects>
+                <viewController id="ARb-LQ-DId" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EVi-fX-TYc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmw-Ge-b7S">
+                                <rect key="frame" x="140.66666666666666" y="215.66666666666666" width="94" height="40.999999999999972"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Почта" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRw-5M-Th9">
+                                <rect key="frame" x="167" y="276.66666666666669" width="41" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yCi-A7-csp">
+                                <rect key="frame" x="75" y="298.66666666666669" width="225" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hS-yn-Vdy">
+                                <rect key="frame" x="75" y="371.66666666666669" width="225" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwv-RG-tuk">
+                                <rect key="frame" x="164.66666666666666" y="421.66666666666669" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="KIK-0T-jpp" kind="presentation" id="JYu-lD-NJ1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P2-tT-GPp">
+                                <rect key="frame" x="130" y="348.66666666666669" width="115" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nmw-Ge-b7S" firstAttribute="centerX" secondItem="EVi-fX-TYc" secondAttribute="centerX" id="0d7-Xy-PhM"/>
+                            <constraint firstItem="5P2-tT-GPp" firstAttribute="leading" secondItem="2IJ-b3-gy5" secondAttribute="leading" constant="130" id="1ys-UB-Jtu"/>
+                            <constraint firstItem="2hS-yn-Vdy" firstAttribute="top" secondItem="5P2-tT-GPp" secondAttribute="bottom" constant="5" id="5af-vF-5UW"/>
+                            <constraint firstItem="2hS-yn-Vdy" firstAttribute="leading" secondItem="2IJ-b3-gy5" secondAttribute="leading" constant="75" id="8bx-fe-zwc"/>
+                            <constraint firstItem="nmw-Ge-b7S" firstAttribute="centerY" secondItem="EVi-fX-TYc" secondAttribute="centerY" constant="-170" id="FtJ-f1-J0P"/>
+                            <constraint firstItem="2IJ-b3-gy5" firstAttribute="trailing" secondItem="2hS-yn-Vdy" secondAttribute="trailing" constant="75" id="KS3-Jc-gMK"/>
+                            <constraint firstItem="2IJ-b3-gy5" firstAttribute="trailing" secondItem="5P2-tT-GPp" secondAttribute="trailing" constant="130" id="N8D-JO-of6"/>
+                            <constraint firstItem="Cwv-RG-tuk" firstAttribute="top" secondItem="2hS-yn-Vdy" secondAttribute="bottom" constant="20" id="QVs-Tf-oo9"/>
+                            <constraint firstItem="bRw-5M-Th9" firstAttribute="top" secondItem="nmw-Ge-b7S" secondAttribute="bottom" constant="20" id="S7B-R0-tVy"/>
+                            <constraint firstItem="yCi-A7-csp" firstAttribute="leading" secondItem="2IJ-b3-gy5" secondAttribute="leading" constant="75" id="WdD-LI-qOf"/>
+                            <constraint firstItem="bRw-5M-Th9" firstAttribute="centerX" secondItem="EVi-fX-TYc" secondAttribute="centerX" id="hc4-x3-d0r"/>
+                            <constraint firstItem="2IJ-b3-gy5" firstAttribute="trailing" secondItem="yCi-A7-csp" secondAttribute="trailing" constant="75" id="iYX-VN-HTL"/>
+                            <constraint firstItem="Cwv-RG-tuk" firstAttribute="centerX" secondItem="EVi-fX-TYc" secondAttribute="centerX" id="spu-kW-zRL"/>
+                            <constraint firstItem="yCi-A7-csp" firstAttribute="top" secondItem="bRw-5M-Th9" secondAttribute="bottom" constant="5" id="t94-Of-5a0"/>
+                            <constraint firstItem="5P2-tT-GPp" firstAttribute="top" secondItem="yCi-A7-csp" secondAttribute="bottom" constant="20" id="yrz-GS-RPe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2IJ-b3-gy5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOK-bq-Ru4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="-351"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ndI-LO-h8P"/>
+    </inferredMetricsTieBreakers>
 </document>
