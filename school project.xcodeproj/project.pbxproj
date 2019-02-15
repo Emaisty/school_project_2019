@@ -14,6 +14,7 @@
 		2E2AD0862211C9F400BB4FF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AD0842211C9F400BB4FF5 /* LaunchScreen.storyboard */; };
 		2E2AD0912211C9F400BB4FF5 /* school_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AD0902211C9F400BB4FF5 /* school_projectTests.swift */; };
 		2E2AD09C2211C9F400BB4FF5 /* school_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AD09B2211C9F400BB4FF5 /* school_projectUITests.swift */; };
+		800577FE2216967F00863267 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800577FD2216967F00863267 /* LoginPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2E2AD0972211C9F400BB4FF5 /* school projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "school projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2AD09B2211C9F400BB4FF5 /* school_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = school_projectUITests.swift; sourceTree = "<group>"; };
 		2E2AD09D2211C9F400BB4FF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		800577FD2216967F00863267 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				2E2AD0822211C9F400BB4FF5 /* Assets.xcassets */,
 				2E2AD0842211C9F400BB4FF5 /* LaunchScreen.storyboard */,
 				2E2AD0872211C9F400BB4FF5 /* Info.plist */,
+				800577FD2216967F00863267 /* LoginPageViewController.swift */,
 			);
 			path = "school project";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800577FE2216967F00863267 /* LoginPageViewController.swift in Sources */,
 				2E2AD07E2211C9F200BB4FF5 /* ViewController.swift in Sources */,
 				2E2AD07C2211C9F200BB4FF5 /* AppDelegate.swift in Sources */,
 			);
