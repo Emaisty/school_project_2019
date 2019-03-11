@@ -15,6 +15,10 @@
 		2E2AD0912211C9F400BB4FF5 /* school_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AD0902211C9F400BB4FF5 /* school_projectTests.swift */; };
 		2E2AD09C2211C9F400BB4FF5 /* school_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AD09B2211C9F400BB4FF5 /* school_projectUITests.swift */; };
 		800577FE2216967F00863267 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800577FD2216967F00863267 /* LoginPageViewController.swift */; };
+		802E62B52236D8FF00DF9FCA /* number-five-in-circular-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 802E62B42236D8FF00DF9FCA /* number-five-in-circular-button.png */; };
+		802E62B72236D95400DF9FCA /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 802E62B62236D95400DF9FCA /* profile.png */; };
+		802E62B92236DB2C00DF9FCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 802E62B82236DB2B00DF9FCA /* settings.png */; };
+		802E62BB2236DD2F00DF9FCA /* check-form.png in Resources */ = {isa = PBXBuildFile; fileRef = 802E62BA2236DD2E00DF9FCA /* check-form.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		2E2AD09B2211C9F400BB4FF5 /* school_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = school_projectUITests.swift; sourceTree = "<group>"; };
 		2E2AD09D2211C9F400BB4FF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		800577FD2216967F00863267 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		802E62B42236D8FF00DF9FCA /* number-five-in-circular-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "number-five-in-circular-button.png"; path = "../../../Downloads/number-five-in-circular-button.png"; sourceTree = "<group>"; };
+		802E62B62236D95400DF9FCA /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile.png; path = ../../../Downloads/profile.png; sourceTree = "<group>"; };
+		802E62B82236DB2B00DF9FCA /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = ../../../Downloads/settings.png; sourceTree = "<group>"; };
+		802E62BA2236DD2E00DF9FCA /* check-form.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "check-form.png"; path = "../../../Downloads/check-form.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		2E2AD07A2211C9F200BB4FF5 /* school project */ = {
 			isa = PBXGroup;
 			children = (
+				802E62AF2236D87300DF9FCA /* templates */,
 				2E2AD07B2211C9F200BB4FF5 /* AppDelegate.swift */,
 				2E2AD07D2211C9F200BB4FF5 /* ViewController.swift */,
 				2E2AD07F2211C9F200BB4FF5 /* Main.storyboard */,
@@ -126,6 +135,17 @@
 				2E2AD09D2211C9F400BB4FF5 /* Info.plist */,
 			);
 			path = "school projectUITests";
+			sourceTree = "<group>";
+		};
+		802E62AF2236D87300DF9FCA /* templates */ = {
+			isa = PBXGroup;
+			children = (
+				802E62BA2236DD2E00DF9FCA /* check-form.png */,
+				802E62B82236DB2B00DF9FCA /* settings.png */,
+				802E62B42236D8FF00DF9FCA /* number-five-in-circular-button.png */,
+				802E62B62236D95400DF9FCA /* profile.png */,
+			);
+			name = templates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +252,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802E62BB2236DD2F00DF9FCA /* check-form.png in Resources */,
 				2E2AD0862211C9F400BB4FF5 /* LaunchScreen.storyboard in Resources */,
+				802E62B92236DB2C00DF9FCA /* settings.png in Resources */,
+				802E62B72236D95400DF9FCA /* profile.png in Resources */,
 				2E2AD0832211C9F400BB4FF5 /* Assets.xcassets in Resources */,
 				2E2AD0812211C9F200BB4FF5 /* Main.storyboard in Resources */,
+				802E62B52236D8FF00DF9FCA /* number-five-in-circular-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

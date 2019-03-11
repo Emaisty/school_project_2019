@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ARb-LQ-DId">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KIK-0T-jpp">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,10 +17,10 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.38" green="0.54000000000000004" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.38" green="0.57000000000000006" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Расписание" id="lBl-iG-Qur"/>
+                    <tabBarItem key="tabBarItem" title="Расписание" image="check-form.png" id="lBl-iG-Qur"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,7 +36,7 @@
                         <color key="backgroundColor" red="0.38" green="0.56999999999999995" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="4KA-RX-lGq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Оценки" id="XsR-0e-7yR"/>
+                    <tabBarItem key="tabBarItem" title="Оценки" image="number-five-in-circular-button.png" id="XsR-0e-7yR"/>
                     <navigationItem key="navigationItem" id="hvB-6J-iro"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAh-xi-465" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -63,11 +63,11 @@
                         <color key="backgroundColor" red="0.38" green="0.56999999999999995" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Xtu-6D-Kws"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Аккаунт" id="uRy-ql-fhg"/>
+                    <tabBarItem key="tabBarItem" title="Аккаунт" image="profile.png" id="uRy-ql-fhg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GhN-hO-P0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1190" y="860"/>
+            <point key="canvasLocation" x="1189.8550724637682" y="859.82142857142856"/>
         </scene>
         <!--Настройки-->
         <scene sceneID="8S2-mB-Z3E">
@@ -79,7 +79,7 @@
                         <color key="backgroundColor" red="0.38" green="0.56999999999999995" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="h5F-Kg-OeE"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Настройки" id="fod-og-NFV"/>
+                    <tabBarItem key="tabBarItem" title="Настройки" image="settings.png" id="fod-og-NFV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UD0-c8-3EC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,6 +94,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.97999999999999998" green="0.97999999999999998" blue="0.97999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" cocoaTouchSystemColor="darkTextColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="nOj-cP-MiP"/>
@@ -116,31 +117,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmw-Ge-b7S">
-                                <rect key="frame" x="160" y="257.66666666666669" width="94" height="41"/>
+                                <rect key="frame" x="160" y="327.66666666666669" width="94" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Почта" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRw-5M-Th9">
-                                <rect key="frame" x="186.66666666666666" y="318.66666666666669" width="41" height="17"/>
+                                <rect key="frame" x="186.66666666666666" y="388.66666666666669" width="41" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yCi-A7-csp">
-                                <rect key="frame" x="75" y="340.66666666666669" width="264" height="30"/>
+                                <rect key="frame" x="75" y="410.66666666666669" width="264" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hS-yn-Vdy">
-                                <rect key="frame" x="75" y="413.66666666666669" width="264" height="30"/>
+                                <rect key="frame" x="75" y="483.66666666666669" width="264" height="30.000000000000057"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwv-RG-tuk">
-                                <rect key="frame" x="184" y="463.66666666666669" width="46" height="30"/>
+                                <rect key="frame" x="184" y="533.66666666666663" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="loginaction:" destination="ARb-LQ-DId" eventType="touchUpInside" id="ZLn-XS-Ir9"/>
@@ -148,7 +150,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P2-tT-GPp">
-                                <rect key="frame" x="130" y="390.66666666666669" width="154" height="18"/>
+                                <rect key="frame" x="130" y="460.66666666666669" width="154" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -160,7 +162,7 @@
                             <constraint firstItem="5P2-tT-GPp" firstAttribute="leading" secondItem="2IJ-b3-gy5" secondAttribute="leading" constant="130" id="1ys-UB-Jtu"/>
                             <constraint firstItem="2hS-yn-Vdy" firstAttribute="top" secondItem="5P2-tT-GPp" secondAttribute="bottom" constant="5" id="5af-vF-5UW"/>
                             <constraint firstItem="2hS-yn-Vdy" firstAttribute="leading" secondItem="2IJ-b3-gy5" secondAttribute="leading" constant="75" id="8bx-fe-zwc"/>
-                            <constraint firstItem="nmw-Ge-b7S" firstAttribute="centerY" secondItem="EVi-fX-TYc" secondAttribute="centerY" constant="-170" id="FtJ-f1-J0P"/>
+                            <constraint firstItem="nmw-Ge-b7S" firstAttribute="centerY" secondItem="EVi-fX-TYc" secondAttribute="centerY" constant="-100" id="FtJ-f1-J0P"/>
                             <constraint firstItem="2IJ-b3-gy5" firstAttribute="trailing" secondItem="2hS-yn-Vdy" secondAttribute="trailing" constant="75" id="KS3-Jc-gMK"/>
                             <constraint firstItem="2IJ-b3-gy5" firstAttribute="trailing" secondItem="5P2-tT-GPp" secondAttribute="trailing" constant="130" id="N8D-JO-of6"/>
                             <constraint firstItem="Cwv-RG-tuk" firstAttribute="top" secondItem="2hS-yn-Vdy" secondAttribute="bottom" constant="20" id="QVs-Tf-oo9"/>
@@ -181,10 +183,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOK-bq-Ru4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-564" y="-351"/>
+            <point key="canvasLocation" x="-622" y="-408"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="check-form.png" width="32" height="32"/>
+        <image name="number-five-in-circular-button.png" width="32" height="32"/>
+        <image name="profile.png" width="23" height="23"/>
+        <image name="settings.png" width="32" height="32"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gCD-ee-Ya6"/>
+        <segue reference="ndI-LO-h8P"/>
     </inferredMetricsTieBreakers>
 </document>
