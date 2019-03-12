@@ -20,13 +20,13 @@
                         <color key="backgroundColor" red="0.38" green="0.57000000000000006" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Расписание" image="check-form.png" id="lBl-iG-Qur"/>
+                    <tabBarItem key="tabBarItem" title="Расписание" id="lBl-iG-Qur"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-494.20289855072468" y="859.82142857142856"/>
         </scene>
-        <!--Оценки-->
+        <!--View Controller-->
         <scene sceneID="vxi-C1-eJA">
             <objects>
                 <viewController id="2dq-e1-X10" sceneMemberID="viewController">
@@ -36,7 +36,9 @@
                         <color key="backgroundColor" red="0.38" green="0.56999999999999995" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="4KA-RX-lGq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Оценки" image="number-five-in-circular-button.png" id="XsR-0e-7yR"/>
+                    <tabBarItem key="tabBarItem" title="" image="five_tab_bar" id="XsR-0e-7yR">
+                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="100" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="hvB-6J-iro"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAh-xi-465" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -63,7 +65,7 @@
                         <color key="backgroundColor" red="0.38" green="0.56999999999999995" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Xtu-6D-Kws"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Аккаунт" image="profile.png" id="uRy-ql-fhg"/>
+                    <tabBarItem key="tabBarItem" title="Аккаунт" id="uRy-ql-fhg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GhN-hO-P0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,7 +81,7 @@
                         <color key="backgroundColor" red="0.38" green="0.56999999999999995" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="h5F-Kg-OeE"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Настройки" image="settings.png" id="fod-og-NFV"/>
+                    <tabBarItem key="tabBarItem" title="Настройки" id="fod-og-NFV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UD0-c8-3EC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,64 +124,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Почта" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRw-5M-Th9">
-                                <rect key="frame" x="186.66666666666666" y="388.66666666666669" width="41" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yCi-A7-csp">
-                                <rect key="frame" x="75" y="410.66666666666669" width="264" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hS-yn-Vdy">
-                                <rect key="frame" x="75" y="483.66666666666669" width="264" height="30.000000000000057"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwv-RG-tuk">
-                                <rect key="frame" x="184" y="533.66666666666663" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="loginaction:" destination="ARb-LQ-DId" eventType="touchUpInside" id="ZLn-XS-Ir9"/>
-                                    <segue destination="KIK-0T-jpp" kind="presentation" identifier="loginToHome" id="JYu-lD-NJ1"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P2-tT-GPp">
-                                <rect key="frame" x="130" y="460.66666666666669" width="154" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.38" green="0.56999999999999995" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nmw-Ge-b7S" firstAttribute="centerX" secondItem="EVi-fX-TYc" secondAttribute="centerX" id="0d7-Xy-PhM"/>
-                            <constraint firstItem="5P2-tT-GPp" firstAttribute="leading" secondItem="2IJ-b3-gy5" secondAttribute="leading" constant="130" id="1ys-UB-Jtu"/>
-                            <constraint firstItem="2hS-yn-Vdy" firstAttribute="top" secondItem="5P2-tT-GPp" secondAttribute="bottom" constant="5" id="5af-vF-5UW"/>
-                            <constraint firstItem="2hS-yn-Vdy" firstAttribute="leading" secondItem="2IJ-b3-gy5" secondAttribute="leading" constant="75" id="8bx-fe-zwc"/>
                             <constraint firstItem="nmw-Ge-b7S" firstAttribute="centerY" secondItem="EVi-fX-TYc" secondAttribute="centerY" constant="-100" id="FtJ-f1-J0P"/>
-                            <constraint firstItem="2IJ-b3-gy5" firstAttribute="trailing" secondItem="2hS-yn-Vdy" secondAttribute="trailing" constant="75" id="KS3-Jc-gMK"/>
-                            <constraint firstItem="2IJ-b3-gy5" firstAttribute="trailing" secondItem="5P2-tT-GPp" secondAttribute="trailing" constant="130" id="N8D-JO-of6"/>
-                            <constraint firstItem="Cwv-RG-tuk" firstAttribute="top" secondItem="2hS-yn-Vdy" secondAttribute="bottom" constant="20" id="QVs-Tf-oo9"/>
-                            <constraint firstItem="bRw-5M-Th9" firstAttribute="top" secondItem="nmw-Ge-b7S" secondAttribute="bottom" constant="20" id="S7B-R0-tVy"/>
-                            <constraint firstItem="yCi-A7-csp" firstAttribute="leading" secondItem="2IJ-b3-gy5" secondAttribute="leading" constant="75" id="WdD-LI-qOf"/>
-                            <constraint firstItem="bRw-5M-Th9" firstAttribute="centerX" secondItem="EVi-fX-TYc" secondAttribute="centerX" id="hc4-x3-d0r"/>
-                            <constraint firstItem="2IJ-b3-gy5" firstAttribute="trailing" secondItem="yCi-A7-csp" secondAttribute="trailing" constant="75" id="iYX-VN-HTL"/>
-                            <constraint firstItem="Cwv-RG-tuk" firstAttribute="centerX" secondItem="EVi-fX-TYc" secondAttribute="centerX" id="spu-kW-zRL"/>
-                            <constraint firstItem="yCi-A7-csp" firstAttribute="top" secondItem="bRw-5M-Th9" secondAttribute="bottom" constant="5" id="t94-Of-5a0"/>
-                            <constraint firstItem="5P2-tT-GPp" firstAttribute="top" secondItem="yCi-A7-csp" secondAttribute="bottom" constant="20" id="yrz-GS-RPe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2IJ-b3-gy5"/>
                     </view>
-                    <connections>
-                        <outlet property="emailusertextfield" destination="yCi-A7-csp" id="c46-wV-e8P"/>
-                        <outlet property="passwordusertextfield" destination="2hS-yn-Vdy" id="SOo-tm-InP"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOK-bq-Ru4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,10 +139,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="check-form.png" width="32" height="32"/>
-        <image name="number-five-in-circular-button.png" width="32" height="32"/>
-        <image name="profile.png" width="23" height="23"/>
-        <image name="settings.png" width="32" height="32"/>
+        <image name="five_tab_bar" width="34" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ndI-LO-h8P"/>
