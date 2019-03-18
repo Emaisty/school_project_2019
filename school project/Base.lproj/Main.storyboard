@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ARb-LQ-DId">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KIK-0T-jpp">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,15 +10,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--mauda-->
+        <!--timetable-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="mauda" id="BYZ-38-t0r" customClass="ViewController" customModule="school_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="timetable" id="BYZ-38-t0r" customClass="TimetableViewController" customModule="school_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgF-AK-RZt" customClass="ViewController">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgF-AK-RZt" customClass="TimetableViewController">
                                 <rect key="frame" x="0.0" y="120" width="320" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -27,18 +27,33 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd8-FR-PYv">
+                                <rect key="frame" x="30" y="35" width="120" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="BmZ-lq-rOG"/>
+                                    <constraint firstAttribute="height" constant="33" id="wHa-md-VgK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.38" green="0.57000000000000006" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="qgF-AK-RZt" secondAttribute="bottom" id="4fz-Jp-Pf5"/>
+                            <constraint firstItem="cd8-FR-PYv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="BEi-k4-3ju"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qgF-AK-RZt" secondAttribute="trailing" id="GcX-I0-e2o"/>
                             <constraint firstItem="qgF-AK-RZt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ToM-Pg-h4m"/>
                             <constraint firstItem="qgF-AK-RZt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fzt-3c-AcE"/>
+                            <constraint firstItem="cd8-FR-PYv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="t2W-i3-aVU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Расписание" id="lBl-iG-Qur"/>
                     <connections>
+                        <outlet property="MonthLabel" destination="cd8-FR-PYv" id="G86-bX-w2o"/>
+                        <outlet property="Timetable" destination="qgF-AK-RZt" id="Rdi-aI-UuX"/>
                         <outlet property="View" destination="qgF-AK-RZt" id="pdJ-W0-yqK"/>
                     </connections>
                 </viewController>
@@ -117,6 +132,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.97999999999999998" green="0.97999999999999998" blue="0.97999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="50"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="nOj-cP-MiP"/>
