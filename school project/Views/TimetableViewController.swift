@@ -10,22 +10,24 @@ import UIKit
 
 class TimetableViewController: UIViewController {
 
-    @IBOutlet weak var Timetable: UIView!
+
+
+    @IBOutlet weak var Timetable: UIScrollView!
     @IBOutlet weak var MonthLabel: UILabel!
-    var Cells = ["muda"]
+    var TimetableCells = [UIView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         SetMonth()
-        let newView = UIView()
-        newView.backgroundColor = UIColor.red
-        Timetable.addSubview(newView)
+        let numberoflessons = 3 - 1
         
-        newView.translatesAutoresizingMaskIntoConstraints = false
-        let horizontalConstraint = NSLayoutConstraint(item: newView, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0)
-        let leftMarginConstraint = NSLayoutConstraint(item: newView, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leadingMargin, multiplier: 1, constant: 10)
-        let heightConstraint = NSLayoutConstraint(item: newView, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 100)
-        view.addConstraints([horizontalConstraint, leftMarginConstraint, heightConstraint])
+        for k in 0...numberoflessons{
+            AddNewCell(i: k)
+        }
+        
+        
+        
+        
         
     }
     
@@ -33,6 +35,23 @@ class TimetableViewController: UIViewController {
         let components = Calendar.current.dateComponents([ .month], from: Date())
         let months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
         MonthLabel.text = months[components.month!-1]
+    }
+    
+    func AddNewCell(i: Int) {
+        TimetableCells.append(UIView())
+        TimetableCells[i].backgroundColor = UIColor.red
+        Timetable.addSubview(TimetableCells[i])
+        TimetableCells[i].layer.cornerRadius = 25
+        
+        TimetableCells[i].translatesAutoresizingMaskIntoConstraints = false
+        let HorizontalConstraint = NSLayoutConstraint(item: TimetableCells[i], attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0)
+        let SidesMarginConstraint = NSLayoutConstraint(item: TimetableCells[i], attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leadingMargin, multiplier: 1, constant: 0)
+        let HeightConstraint = NSLayoutConstraint(item: TimetableCells[i], attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 50)
+        var TopConstraint = NSLayoutConstraint(item: TimetableCells[i], attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: Timetable, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1, constant: 20)
+        if i > 0{
+            TopConstraint = NSLayoutConstraint(item: TimetableCells[i], attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: TimetableCells[i-1], attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1, constant: 20)
+        }
+        view.addConstraints([HorizontalConstraint, SidesMarginConstraint, HeightConstraint, TopConstraint])
     }
 
 }
