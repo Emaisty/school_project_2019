@@ -15,6 +15,9 @@
 		2E2AD0912211C9F400BB4FF5 /* school_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AD0902211C9F400BB4FF5 /* school_projectTests.swift */; };
 		2E2AD09C2211C9F400BB4FF5 /* school_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AD09B2211C9F400BB4FF5 /* school_projectUITests.swift */; };
 		8002689922384BE500D6E403 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002689822384BE500D6E403 /* LoginPageViewController.swift */; };
+		80484409225547DE00A19ED0 /* futurapt_book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80484406225547DE00A19ED0 /* futurapt_book.ttf */; };
+		8048440A225547DE00A19ED0 /* futurapt_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80484407225547DE00A19ED0 /* futurapt_medium.ttf */; };
+		8048440B225547DE00A19ED0 /* futurapt_demi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80484408225547DE00A19ED0 /* futurapt_demi.ttf */; };
 		80556270223DAE6B00DA2018 /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8055626F223DAE6B00DA2018 /* TimetableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		2E2AD09B2211C9F400BB4FF5 /* school_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = school_projectUITests.swift; sourceTree = "<group>"; };
 		2E2AD09D2211C9F400BB4FF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8002689822384BE500D6E403 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		80484406225547DE00A19ED0 /* futurapt_book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = futurapt_book.ttf; sourceTree = "<group>"; };
+		80484407225547DE00A19ED0 /* futurapt_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = futurapt_medium.ttf; sourceTree = "<group>"; };
+		80484408225547DE00A19ED0 /* futurapt_demi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = futurapt_demi.ttf; sourceTree = "<group>"; };
 		8055626F223DAE6B00DA2018 /* TimetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,13 +107,14 @@
 		2E2AD07A2211C9F200BB4FF5 /* school project */ = {
 			isa = PBXGroup;
 			children = (
-				8055626E223DAD9300DA2018 /* Views */,
 				2E2AD07B2211C9F200BB4FF5 /* AppDelegate.swift */,
 				2E2AD07D2211C9F200BB4FF5 /* ViewController.swift */,
 				2E2AD07F2211C9F200BB4FF5 /* Main.storyboard */,
 				2E2AD0822211C9F400BB4FF5 /* Assets.xcassets */,
 				2E2AD0842211C9F400BB4FF5 /* LaunchScreen.storyboard */,
 				2E2AD0872211C9F400BB4FF5 /* Info.plist */,
+				8055626E223DAD9300DA2018 /* Views */,
+				80484405225547C800A19ED0 /* Font */,
 			);
 			path = "school project";
 			sourceTree = "<group>";
@@ -128,6 +135,16 @@
 				2E2AD09D2211C9F400BB4FF5 /* Info.plist */,
 			);
 			path = "school projectUITests";
+			sourceTree = "<group>";
+		};
+		80484405225547C800A19ED0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				80484406225547DE00A19ED0 /* futurapt_book.ttf */,
+				80484408225547DE00A19ED0 /* futurapt_demi.ttf */,
+				80484407225547DE00A19ED0 /* futurapt_medium.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		8055626E223DAD9300DA2018 /* Views */ = {
@@ -245,7 +262,10 @@
 			files = (
 				2E2AD0862211C9F400BB4FF5 /* LaunchScreen.storyboard in Resources */,
 				2E2AD0832211C9F400BB4FF5 /* Assets.xcassets in Resources */,
+				8048440B225547DE00A19ED0 /* futurapt_demi.ttf in Resources */,
+				80484409225547DE00A19ED0 /* futurapt_book.ttf in Resources */,
 				2E2AD0812211C9F200BB4FF5 /* Main.storyboard in Resources */,
+				8048440A225547DE00A19ED0 /* futurapt_medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

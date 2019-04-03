@@ -9,26 +9,20 @@
 import UIKit
 
 class TimetableViewController: UIViewController {
-
-
-
-    @IBOutlet weak var Timetable: UIScrollView!
+    
     @IBOutlet weak var MonthLabel: UILabel!
+    @IBOutlet weak var Timetable: UIView!
+    
     var TimetableCells = [UIView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         SetMonth()
-        let numberoflessons = 3 - 1
+        let numberoflessons = 10 - 1
         
         for k in 0...numberoflessons{
             AddNewCell(i: k)
         }
-        
-        
-        
-        
-        
     }
     
     func SetMonth() {
@@ -39,7 +33,7 @@ class TimetableViewController: UIViewController {
     
     func AddNewCell(i: Int) {
         TimetableCells.append(UIView())
-        TimetableCells[i].backgroundColor = UIColor.red
+        TimetableCells[i].backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
         Timetable.addSubview(TimetableCells[i])
         TimetableCells[i].layer.cornerRadius = 25
         
@@ -53,5 +47,5 @@ class TimetableViewController: UIViewController {
         }
         view.addConstraints([HorizontalConstraint, SidesMarginConstraint, HeightConstraint, TopConstraint])
     }
-
+    
 }
