@@ -12,23 +12,30 @@ class TimetableViewController: UIViewController {
     
     @IBOutlet weak var MonthLabel: UILabel!
     @IBOutlet weak var Timetable: UIView!
+    @IBOutlet weak var TimetableScrollView: UIScrollView!
     
     var TimetableCells = [UIView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         SetMonth()
+        
         let numberoflessons = 10 - 1
         
         for k in 0...numberoflessons{
             AddNewCell(i: k)
         }
+        
     }
     
     func SetMonth() {
         let components = Calendar.current.dateComponents([ .month], from: Date())
         let months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
         MonthLabel.text = months[components.month!-1]
+    }
+    
+    func SetTimetableView(hieght: Int) {
+        
     }
     
     func AddNewCell(i: Int) {

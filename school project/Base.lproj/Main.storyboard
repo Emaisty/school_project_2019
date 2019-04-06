@@ -44,7 +44,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="BmZ-lq-rOG"/>
                                     <constraint firstAttribute="height" constant="33" id="wHa-md-VgK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
@@ -66,7 +66,7 @@
                                     <constraint firstItem="IY1-c8-XdL" firstAttribute="top" secondItem="2e8-wg-t2m" secondAttribute="top" constant="100" id="5wa-tW-cAR"/>
                                     <constraint firstAttribute="trailing" secondItem="IY1-c8-XdL" secondAttribute="trailing" id="Hav-K8-Rui"/>
                                     <constraint firstItem="IY1-c8-XdL" firstAttribute="centerX" secondItem="2e8-wg-t2m" secondAttribute="centerX" id="NSf-2D-kX0"/>
-                                    <constraint firstAttribute="bottom" secondItem="IY1-c8-XdL" secondAttribute="bottom" constant="-100" id="qGy-LN-tPo"/>
+                                    <constraint firstAttribute="bottom" secondItem="IY1-c8-XdL" secondAttribute="bottom" id="qGy-LN-tPo"/>
                                     <constraint firstItem="IY1-c8-XdL" firstAttribute="leading" secondItem="2e8-wg-t2m" secondAttribute="leading" id="sb6-LQ-4az"/>
                                 </constraints>
                             </scrollView>
@@ -92,11 +92,12 @@
                     <connections>
                         <outlet property="MonthLabel" destination="cd8-FR-PYv" id="G86-bX-w2o"/>
                         <outlet property="Timetable" destination="IY1-c8-XdL" id="A3S-MZ-cfQ"/>
+                        <outlet property="TimetableScrollView" destination="2e8-wg-t2m" id="o2n-UX-b5T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-496.37681159420293" y="859.15178571428567"/>
+            <point key="canvasLocation" x="-475" y="1061"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vxi-C1-eJA">
@@ -162,7 +163,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="nnj-Rg-xTH">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="KIK-0T-jpp" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Tab_bar_main" automaticallyAdjustsScrollViewInsets="NO" id="KIK-0T-jpp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ssK-to-ssh">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -195,12 +196,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmw-Ge-b7S">
-                                <rect key="frame" x="162.5" y="276" width="89.5" height="44"/>
+                                <rect key="frame" x="159.5" y="276" width="95" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="bt1-fT-n4J"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Почта/телефон" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wb9-AV-vVW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Почта/телефон" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wb9-AV-vVW">
                                 <rect key="frame" x="146" y="340" width="122" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="53U-pi-O96"/>
@@ -218,7 +222,7 @@
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoG-eS-r3Y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoG-eS-r3Y">
                                 <rect key="frame" x="177" y="419" width="60" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="NkZ-mX-gLV"/>
@@ -237,8 +241,20 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zc-rb-9rY">
-                                <rect key="frame" x="184" y="498" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="172" y="498" width="70" height="34"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="fYo-wR-oev"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="17"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="EnterButton:" destination="ARb-LQ-DId" eventType="touchUpInside" id="qP5-KV-gAn"/>
                                     <segue destination="KIK-0T-jpp" kind="presentation" identifier="loginToHome" id="klN-gN-RkY"/>
@@ -251,13 +267,13 @@
                             <constraint firstItem="yYI-Vk-mXF" firstAttribute="top" secondItem="GoG-eS-r3Y" secondAttribute="bottom" constant="7" id="78V-B8-H5E"/>
                             <constraint firstItem="4Zc-rb-9rY" firstAttribute="top" secondItem="yYI-Vk-mXF" secondAttribute="bottom" constant="20" id="9Hj-bm-rVL"/>
                             <constraint firstItem="OaD-PJ-m1z" firstAttribute="centerX" secondItem="EVi-fX-TYc" secondAttribute="centerX" id="AOe-tQ-WCl"/>
-                            <constraint firstItem="4Zc-rb-9rY" firstAttribute="centerX" secondItem="EVi-fX-TYc" secondAttribute="centerX" id="B4E-Kb-EkR"/>
                             <constraint firstItem="nmw-Ge-b7S" firstAttribute="centerY" secondItem="EVi-fX-TYc" secondAttribute="centerY" constant="-150" id="FtJ-f1-J0P"/>
                             <constraint firstItem="OaD-PJ-m1z" firstAttribute="top" secondItem="wb9-AV-vVW" secondAttribute="bottom" constant="7" id="HhW-Ij-Iae"/>
                             <constraint firstItem="GoG-eS-r3Y" firstAttribute="centerX" secondItem="EVi-fX-TYc" secondAttribute="centerX" id="RXa-iE-jl6"/>
                             <constraint firstItem="yYI-Vk-mXF" firstAttribute="centerX" secondItem="EVi-fX-TYc" secondAttribute="centerX" id="ZIs-eY-Vgz"/>
                             <constraint firstItem="GoG-eS-r3Y" firstAttribute="top" secondItem="OaD-PJ-m1z" secondAttribute="bottom" constant="20" id="fi0-0D-emO"/>
                             <constraint firstItem="wb9-AV-vVW" firstAttribute="top" secondItem="nmw-Ge-b7S" secondAttribute="bottom" constant="20" id="sno-sM-eTf"/>
+                            <constraint firstItem="4Zc-rb-9rY" firstAttribute="centerX" secondItem="EVi-fX-TYc" secondAttribute="centerX" id="wPJ-sX-OQh"/>
                             <constraint firstItem="wb9-AV-vVW" firstAttribute="centerX" secondItem="EVi-fX-TYc" secondAttribute="centerX" id="ztR-Bg-q2M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2IJ-b3-gy5"/>

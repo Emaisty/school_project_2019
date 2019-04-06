@@ -14,10 +14,15 @@ class LoginPageViewController: UIViewController {
     @IBOutlet weak var UserPasswordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.setAnimationsEnabled(true)
+        if (1 == 2){
+            UIView.setAnimationsEnabled(false)
+            self.performSegue(withIdentifier: "loginToHome", sender: self)
+        }
+    }
     
     @IBAction func EnterButton(_ sender: AnyObject) {
         let UserEmail =  UserEmailTextField.text;
@@ -29,7 +34,7 @@ class LoginPageViewController: UIViewController {
         
         self.performSegue(withIdentifier: "loginToHome", sender: self)
     }
-    
+
     func displayMyAlertMessage(userMessage:String) {
         var myAlert = UIAlertController(title: "Warning", message: userMessage, preferredStyle: UIAlertController.Style.alert);
         let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
