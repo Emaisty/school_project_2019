@@ -8,10 +8,30 @@
 
 import UIKit
 
+struct UserData: Decodable {
+    var token: String
+    var pid: String
+    var student_profile_id: String
+    var bot_code: String
+    var students: [Stundents]
+    var invite_code: String
+    var invitations: Int
+    struct Stundents: Decodable {
+        var student_profile_id: Int
+        var name: String
+        var `class`: String
+    }
+}
+
+
+
 class LoginPageViewController: UIViewController {
 
     @IBOutlet weak var UserEmailTextField: UITextField!
     @IBOutlet weak var UserPasswordTextField: UITextField!
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -25,14 +45,29 @@ class LoginPageViewController: UIViewController {
     }
     
     @IBAction func EnterButton(_ sender: AnyObject) {
-        let UserEmail =  UserEmailTextField.text;
-        let UserPassword = UserPasswordTextField.text;
+        let UserEmail =  UserEmailTextField.text
+        let UserPassword = UserPasswordTextField.text
         if (UserEmail!.isEmpty || UserPassword!.isEmpty){
-            displayMyAlertMessage(userMessage: "Enter all fields!");
-            return;
+            displayMyAlertMessage(userMessage: "Enter all fields!")
+            return
         }
+        login(login: UserEmail ?? "", password: UserPassword ?? "")
         
-        self.performSegue(withIdentifier: "loginToHome", sender: self)
+    }
+    
+    func login(login: String,password: String){
+        let urllogpass = "https://api.julista.org/auth_user/?login=" + login + "&password=" + password
+        let url = URL(string: urllogpass)!
+        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+            guard let data = data else { return }
+            do{
+            let Student = try JSONDecoder().decode(UserData.self, from: data)
+                print(Student)
+            } catch let error{
+                print(error)
+            }
+        }
+        task.resume()
     }
 
     func displayMyAlertMessage(userMessage:String) {

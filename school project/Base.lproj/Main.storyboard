@@ -257,7 +257,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="EnterButton:" destination="ARb-LQ-DId" eventType="touchUpInside" id="qP5-KV-gAn"/>
-                                    <segue destination="KIK-0T-jpp" kind="presentation" identifier="loginToHome" id="klN-gN-RkY"/>
+                                    <segue destination="KIK-0T-jpp" kind="presentation" id="uZL-6n-e3i"/>
                                 </connections>
                             </button>
                         </subviews>
