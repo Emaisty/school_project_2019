@@ -20,17 +20,25 @@ class TimetableViewController: UIViewController {
         super.viewDidLoad()
         SetMonth()
         
+        
         let numberoflessons = 10 - 1
         
         for k in 0...numberoflessons{
             AddNewCell(i: k)
         }
+        for k in 0...numberoflessons{
+            AddNumbLess(i: k)
+        }
+        
+    }
+    
+    func Dates() {
         
     }
     
     func SetMonth() {
         let components = Calendar.current.dateComponents([ .month], from: Date())
-        let months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+        let months = ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"]
         MonthLabel.text = months[components.month!-1]
     }
     
@@ -47,12 +55,16 @@ class TimetableViewController: UIViewController {
         TimetableCells[i].translatesAutoresizingMaskIntoConstraints = false
         let HorizontalConstraint = NSLayoutConstraint(item: TimetableCells[i], attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0)
         let SidesMarginConstraint = NSLayoutConstraint(item: TimetableCells[i], attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leadingMargin, multiplier: 1, constant: 0)
-        let HeightConstraint = NSLayoutConstraint(item: TimetableCells[i], attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 50)
-        var TopConstraint = NSLayoutConstraint(item: TimetableCells[i], attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: Timetable, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1, constant: 20)
+        let HeightConstraint = NSLayoutConstraint(item: TimetableCells[i], attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 60)
+        var TopConstraint = NSLayoutConstraint(item: TimetableCells[i], attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: Timetable, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1, constant: 10)
         if i > 0{
-            TopConstraint = NSLayoutConstraint(item: TimetableCells[i], attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: TimetableCells[i-1], attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1, constant: 20)
+            TopConstraint = NSLayoutConstraint(item: TimetableCells[i], attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: TimetableCells[i-1], attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1, constant: 10)
         }
         view.addConstraints([HorizontalConstraint, SidesMarginConstraint, HeightConstraint, TopConstraint])
+    }
+    
+    func AddNumbLess(i: Int){
+        
     }
     
 }

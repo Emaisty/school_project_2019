@@ -19,6 +19,8 @@
 		8048440A225547DE00A19ED0 /* futurapt_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80484407225547DE00A19ED0 /* futurapt_medium.ttf */; };
 		8048440B225547DE00A19ED0 /* futurapt_demi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80484408225547DE00A19ED0 /* futurapt_demi.ttf */; };
 		80556270223DAE6B00DA2018 /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8055626F223DAE6B00DA2018 /* TimetableViewController.swift */; };
+		805A3015226A5BE1001C037B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805A3014226A5BE1001C037B /* SettingsViewController.swift */; };
+		80ED152E2269A69B00F2C479 /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED152D2269A69B00F2C479 /* GradesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		80484407225547DE00A19ED0 /* futurapt_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = futurapt_medium.ttf; sourceTree = "<group>"; };
 		80484408225547DE00A19ED0 /* futurapt_demi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = futurapt_demi.ttf; sourceTree = "<group>"; };
 		8055626F223DAE6B00DA2018 /* TimetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
+		805A3014226A5BE1001C037B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		80ED152D2269A69B00F2C479 /* GradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 			children = (
 				8002689822384BE500D6E403 /* LoginPageViewController.swift */,
 				8055626F223DAE6B00DA2018 /* TimetableViewController.swift */,
+				80ED152D2269A69B00F2C479 /* GradesViewController.swift */,
+				805A3014226A5BE1001C037B /* SettingsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,6 +300,8 @@
 				2E2AD07E2211C9F200BB4FF5 /* ViewController.swift in Sources */,
 				80556270223DAE6B00DA2018 /* TimetableViewController.swift in Sources */,
 				2E2AD07C2211C9F200BB4FF5 /* AppDelegate.swift in Sources */,
+				80ED152E2269A69B00F2C479 /* GradesViewController.swift in Sources */,
+				805A3015226A5BE1001C037B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
