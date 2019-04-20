@@ -14,10 +14,8 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
     }
     
-
-    @IBAction func PressButt(_ sender: Any) {
-        UserDefaults.standard.set(false, forKey: "IsAuth")
-        UserDefaults.standard.synchronize()
-    }
     
+    @IBAction func lol(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "IsAuth")
+    }
 }

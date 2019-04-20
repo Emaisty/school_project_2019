@@ -38,7 +38,7 @@ class LoginPageViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         UIView.setAnimationsEnabled(true)
-        let Auth = UserDefaults.standard.object(forKey: "IsAuth") as? Bool ?? false
+        let Auth = UserDefaults.standard.object(forKey: "IsAuth") as? Bool ?? true
         if (Auth){
             UIView.setAnimationsEnabled(false)
             self.performSegue(withIdentifier: "loginToHome", sender: self)
@@ -76,10 +76,12 @@ class LoginPageViewController: UIViewController {
     }
 
     func Check_loginandpassword(User: UserData) {
+        UserDefaults.standard.set(true, forKey: "IsAuth")
         UserDefaults.standard.set(User.token, forKey: "token")
         UserDefaults.standard.set(User.pid, forKey: "pid")
         UserDefaults.standard.set(User.student_profile_id, forKey: "student_id")
         UserDefaults.standard.synchronize()
+        print(User)
         return;
     }
     

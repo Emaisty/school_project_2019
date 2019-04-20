@@ -8,6 +8,29 @@
 
 import UIKit
 
+struct Day: Decodable {
+    var lessons: [lesson]
+    struct lesson: Decodable {
+        var id: Int
+        var Date: [Int]
+        var begin_time : [Int]
+        var end_time: [Int]
+        var day_number: Int
+        var lesson_number: Int
+        var subject: String
+        var lesson_name: Int
+        var comment: String
+        var marks: [Int]
+        var homework: [homewrk]
+        struct homewrk:Decodable {
+            var description: String
+            var attachments: [Int]
+            
+        }
+        
+    }
+}
+
 class TimetableViewController: UIViewController {
     
     @IBOutlet weak var MonthLabel: UILabel!
@@ -21,7 +44,7 @@ class TimetableViewController: UIViewController {
         SetMonth()
         
         
-        let numberoflessons = 10 - 1
+        let numberoflessons = 7
         
         for k in 0...numberoflessons{
             AddNewCell(i: k)
@@ -29,11 +52,27 @@ class TimetableViewController: UIViewController {
         for k in 0...numberoflessons{
             AddNumbLess(i: k)
         }
-        
+        Timetabl()
     }
     
-    func Dates() {
-        
+    func Timetabl(){
+        let urllogpass = "https://api.julista.org/schedule/?token=91ef2afe72d45d6a152cfb214ca26988&pid=2995882&student_profile_id=2995882&from=2019-04-01&to=2019-04-01"
+        let url = URL(string: urllogpass)!
+        let task = URLSession.shared.dataTask(with: url) {
+            (data, response, error) in guard let data = data else { return }
+            do{
+                let OneDay = try JSONDecoder().decode(Day.self, from: data)
+                self.table(Timetable: OneDay)
+            } catch let error{
+                //self.displayMyAlertMessage(userMessage: "Uncorrect")
+                return
+            }
+        }
+        task.resume()
+    }
+    
+    func table(Timetable: Day) {
+        print(Timetable)
     }
     
     func SetMonth() {
@@ -64,7 +103,20 @@ class TimetableViewController: UIViewController {
     }
     
     func AddNumbLess(i: Int){
+        let view = UIView()
+        view.backgroundColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
+        view.frame = CGRect(x: 0, y: 0, width: 30, height: 100)
+        TimetableCells[i].addSubview(view)
+        TimetableCells[i].clipsToBounds = true
         
+    }
+    
+    func displayMyAlertMessage(userMessage:String) {
+        var myAlert = UIAlertController(title: "Warning", message: userMessage, preferredStyle: UIAlertController.Style.alert);
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+        
+        myAlert.addAction(okAction)
+        self.present(myAlert,animated: true,completion: nil)
     }
     
 }

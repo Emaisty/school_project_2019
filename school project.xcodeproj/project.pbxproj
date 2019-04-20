@@ -10,7 +10,6 @@
 		2E2AD07C2211C9F200BB4FF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AD07B2211C9F200BB4FF5 /* AppDelegate.swift */; };
 		2E2AD07E2211C9F200BB4FF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AD07D2211C9F200BB4FF5 /* ViewController.swift */; };
 		2E2AD0812211C9F200BB4FF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AD07F2211C9F200BB4FF5 /* Main.storyboard */; };
-		2E2AD0832211C9F400BB4FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AD0822211C9F400BB4FF5 /* Assets.xcassets */; };
 		2E2AD0862211C9F400BB4FF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2AD0842211C9F400BB4FF5 /* LaunchScreen.storyboard */; };
 		2E2AD0912211C9F400BB4FF5 /* school_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AD0902211C9F400BB4FF5 /* school_projectTests.swift */; };
 		2E2AD09C2211C9F400BB4FF5 /* school_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2AD09B2211C9F400BB4FF5 /* school_projectUITests.swift */; };
@@ -20,6 +19,8 @@
 		8048440B225547DE00A19ED0 /* futurapt_demi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80484408225547DE00A19ED0 /* futurapt_demi.ttf */; };
 		80556270223DAE6B00DA2018 /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8055626F223DAE6B00DA2018 /* TimetableViewController.swift */; };
 		805A3015226A5BE1001C037B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805A3014226A5BE1001C037B /* SettingsViewController.swift */; };
+		805A3017226A9DCF001C037B /* TheamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805A3016226A9DCF001C037B /* TheamViewController.swift */; };
+		805A3019226AA331001C037B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805A3018226AA32F001C037B /* Assets.xcassets */; };
 		80ED152E2269A69B00F2C479 /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED152D2269A69B00F2C479 /* GradesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +46,6 @@
 		2E2AD07B2211C9F200BB4FF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E2AD07D2211C9F200BB4FF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2E2AD0802211C9F200BB4FF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2E2AD0822211C9F400BB4FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E2AD0852211C9F400BB4FF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E2AD0872211C9F400BB4FF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E2AD08C2211C9F400BB4FF5 /* school projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "school projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +60,8 @@
 		80484408225547DE00A19ED0 /* futurapt_demi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = futurapt_demi.ttf; sourceTree = "<group>"; };
 		8055626F223DAE6B00DA2018 /* TimetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
 		805A3014226A5BE1001C037B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		805A3016226A9DCF001C037B /* TheamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheamViewController.swift; sourceTree = "<group>"; };
+		805A3018226AA32F001C037B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80ED152D2269A69B00F2C479 /* GradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,11 +116,12 @@
 				2E2AD07B2211C9F200BB4FF5 /* AppDelegate.swift */,
 				2E2AD07D2211C9F200BB4FF5 /* ViewController.swift */,
 				2E2AD07F2211C9F200BB4FF5 /* Main.storyboard */,
-				2E2AD0822211C9F400BB4FF5 /* Assets.xcassets */,
+				805A3018226AA32F001C037B /* Assets.xcassets */,
 				2E2AD0842211C9F400BB4FF5 /* LaunchScreen.storyboard */,
 				2E2AD0872211C9F400BB4FF5 /* Info.plist */,
 				8055626E223DAD9300DA2018 /* Views */,
 				80484405225547C800A19ED0 /* Font */,
+				805A3016226A9DCF001C037B /* TheamViewController.swift */,
 			);
 			path = "school project";
 			sourceTree = "<group>";
@@ -267,10 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E2AD0862211C9F400BB4FF5 /* LaunchScreen.storyboard in Resources */,
-				2E2AD0832211C9F400BB4FF5 /* Assets.xcassets in Resources */,
 				8048440B225547DE00A19ED0 /* futurapt_demi.ttf in Resources */,
 				80484409225547DE00A19ED0 /* futurapt_book.ttf in Resources */,
 				2E2AD0812211C9F200BB4FF5 /* Main.storyboard in Resources */,
+				805A3019226AA331001C037B /* Assets.xcassets in Resources */,
 				8048440A225547DE00A19ED0 /* futurapt_medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +305,7 @@
 				2E2AD07C2211C9F200BB4FF5 /* AppDelegate.swift in Sources */,
 				80ED152E2269A69B00F2C479 /* GradesViewController.swift in Sources */,
 				805A3015226A5BE1001C037B /* SettingsViewController.swift in Sources */,
+				805A3017226A9DCF001C037B /* TheamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
